@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f5f7;
+    padding: 20px;
+}
+
+.kanban-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #172b4d;
+}
+
+.kanban-board {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.kanban-column {
+    background-color: #ebecf0;
+    border-radius: 3px;
+    min-width: 272px;
+    padding: 10px;
+    height: fit-content;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px;
+    font-weight: bold;
+    color: #172b4d;
+}
+
+.add-card-btn {
+    background: none;
+    border: none;
+    color: #5e6c84;
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-card-btn:hover {
+    background-color: #ddd;
+}
+
+.kanban-card {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+    padding: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.kanban-card:hover {
+    background-color: #f4f5f7;
+}
+
+.card-form {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.card-textarea {
+    resize: none;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    min-height: 60px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.add-card {
+    background-color: #5aac44;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cancel-card {
+    background: none;
+    border: none;
+    color: #5e6c84;
+    cursor: pointer;
+}
+
+.delete-column {
+    background: none;
+    border: none;
+    color: #5e6c84;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-column:hover {
+    color: #eb5a46;
+}
+
+.add-column {
+    background-color: rgba(9, 30, 66, 0.04);
+    border-radius: 3px;
+    min-width: 272px;
+    padding: 10px;
+    cursor: pointer;
+    color: #5e6c84;
+}
+
+.add-column:hover {
+    background-color: rgba(9, 30, 66, 0.08);
+}
+
+.add-column-form {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #ebecf0;
+    border-radius: 3px;
+    min-width: 272px;
+    padding: 10px;
+}
+
+.column-input {
+    padding: 8px;
+    border: 2px solid #0079bf;
+    border-radius: 3px;
+    width: 100%;
+}

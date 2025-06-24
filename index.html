@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Kanban</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Kanban Board</h1>
+
+  <div class="add-column" id="addColumnBtn">
+      + Adicionar outra coluna
+  </div>
+  <div class="kanban-board" id="kanbanBoard">
+    <!-- Colunas serão adicionadas aqui via JavaScript -->
+  </div>
+
+  <div class="add-column-form" id="addColumnForm">
+    <input type="text" class="column-input" id="columnInput" placeholder="Digite o título da coluna...">
+    <div class="form-actions">
+      <button class="add-card" id="addColumnSubmit">Adicionar coluna</button>
+      <button class="cancel-card" id="cancelAddColumn">×</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
